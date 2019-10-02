@@ -1,4 +1,4 @@
-.form {
+.order {
     padding-bottom: 55px;
 
     @media (min-width: $tablet-width) {
@@ -11,7 +11,7 @@
 
 
 
-.form__header {
+.order__header {
     margin-bottom: 23px;
 
     @media (min-width: $tablet-width) {
@@ -23,7 +23,7 @@
 
 
 
-.form__title {
+.order__title {
     @include font(27px, 30px, 700);
 
     margin-bottom: 22px;
@@ -70,11 +70,7 @@
     }
 }
 
-
-
-
-
-.form__text {
+.order__text {
     @include font(13px, 24px);
 
     padding-left: 30px;
@@ -92,11 +88,7 @@
     }
 }
 
-
-
-
-
-.form__features {
+.order__form {
     padding-left: 30px;
     padding-right: 30px;
 
@@ -105,11 +97,7 @@
     }
 }
 
-
-
-
-
-.form__fieldset {
+.order__form-inner {
     margin: 0;
     padding: 0;
     border: none;
@@ -206,11 +194,7 @@
     }
 }
 
-
-
-
-
-.form__caption {
+.order__form-title {
     position: relative;
 
     display: block;
@@ -218,7 +202,7 @@
     @include font(17px, 1, 700);
 
     color: #63d1bb;
-    text-transform: uppercase;
+    text-transorder: uppercase;
 
     &::after {
         @include pseudo();
@@ -251,7 +235,6 @@
     &--desire {
         margin-bottom: 25px;
     }
-
 
     @media (min-width: $tablet-width) {
         position: absolute;
@@ -313,11 +296,7 @@
     }
 }
 
-
-
-
-
-.form__list {
+.order__form-list {
     @media (min-width: $tablet-width) {
         &--color {
             display: flex;
@@ -328,11 +307,7 @@
     }
 }
 
-
-
-
-
-.form__item {
+.order__form-item {
     &--type + &--type {
         margin-top: 12px;
     }
@@ -390,8 +365,8 @@
 
 
 
-.form__radio,
-.form__checkbox {
+.order__form-radio,
+.order__form-checkbox {
     display: none;
 }
 
@@ -399,15 +374,15 @@
 
 
 
-.form__radio {
-    &:checked + .form__label::after {
+.order__form-radio {
+    &:checked + .order__form-label::after {
         box-sizing: border-box;
         background-color: $primary;
         box-shadow:  inset 0 0 0 10px #fff;
     }
 
     @media (min-width: $tablet-width) {
-        &:checked + .form__label::after {
+        &:checked + .order__form-label::after {
             box-shadow:  inset 0 0 0 14px #fff;
         }
     }
@@ -417,7 +392,7 @@
 
 
 
-.form__label {
+.order__form-label {
     @include font(17px, 18px, 700);
 
     &:hover::after {
@@ -529,8 +504,8 @@
 
 
 
-.form__checkbox {
-    &:checked + .form__label::before {
+.order__form-checkbox {
+    &:checked + .order__form-label::before {
         z-index: 1;
 
         @include pseudo();
@@ -546,7 +521,7 @@
     }
 
     @media (min-width: $tablet-width) {
-        &:checked + .form__label::before {
+        &:checked + .order__form-label::before {
             left: 17px;
             top: 22px;
 
@@ -556,12 +531,8 @@
     }
 }
 
-
-
-
-
-.form__input,
-.form__textarea {
+.order__form-input,
+.order__textarea {
     @include font(17px, 18px);
 
     @media (min-width: $tablet-width) {
@@ -572,11 +543,7 @@
     }
 }
 
-
-
-
-
-.form__input {
+.order__form-input {
     padding-top: 16px;
     padding-bottom: 16px;
     box-sizing: border-box;
@@ -596,9 +563,9 @@
 
     &--contact,
     &--mail {
-        &:hover + .form__contact-icon,
-        &:focus + .form__contact-icon,
-        &:active + .form__contact-icon {
+        &:hover + .order__contact-icon,
+        &:focus + .order__contact-icon,
+        &:active + .order__contact-icon {
             fill: $primary;
         }
     }
@@ -627,7 +594,7 @@
 
 
 
-.form__wrapper-contact {
+.order__wrapper-contact {
     position: relative;
 }
 
@@ -635,7 +602,7 @@
 
 
 
-.form__contact-icon {
+.order__contact-icon {
     @include pseudo();
 
     transition: fill .2s linear;
@@ -681,7 +648,7 @@
 }
 
 
-.form__wrapper-textarea {
+.order__wrapper-textarea {
     @media (min-width: $tablet-width) {
         margin-left: 217px;
         margin-right: 50px;
@@ -695,7 +662,7 @@
 }
 
 
-.form__textarea {
+.order__textarea {
     width: 100%;
     padding: 14px;
     padding-bottom: 18px;
@@ -726,10 +693,7 @@
 }
 
 
-
-
-
-.form__wrapper-btn {
+.order__wrapper-btn {
     @media (min-width: $tablet-width) {
         display: flex;
         flex-direction: row-reverse;
@@ -749,7 +713,7 @@
 
 
 
-.form__text-bottom {
+.order__text-bottom {
     @include font(14px, 16px);
 
     margin-bottom: 31px;
@@ -768,7 +732,7 @@
 
 
 
-.form__btn {
+.order__btn {
     @include font(18px, 20px, 700);
 
     width: 100%;
